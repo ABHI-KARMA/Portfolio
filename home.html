@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio - Abhishek</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='style.css')}}" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+</head>
+
+<body>
+    <div class="scrollToTop-btn">
+        <i class="fas fa-angle-up"></i>
+    </div>
+
+    <header>
+        <a href="/" class="brand">Portfolio</a>
+        <div class="menu-btn"></div>
+        <div class="navigation">
+            <a href="#main">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </header>
+
+    <section class="main" id="main" style="
+        background-image: url(static/images/2136802.jpg);
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+      ">
+        <div class="content">
+            <h2>Hello, I'm<br /><span>Abhishek Vishwakarma</span></h2>
+
+            <div class="animated-text">
+                <h3>Jr. Python Developer</h3>
+                <h3>Back-End Developer</h3>
+                <h3>Logo Designer</h3>
+            </div>
+            <a href="{{ url_for('.download_file') }}" class="btn">Download Resume</a
+        >
+        <div class="media-icons">
+          <a href="https://www.linkedin.com/in/abhishek-vishwakarma-228a6716a/"
+            ><i class="fa fa-linkedin-square"></i
+          ></a>
+            <a href="https://github.com/ABHI-KARMA"><i class="fa fa-github"></i
+          ></a>
+            <a href="https://www.instagram.com/codinggyaan4you/"><i class="fab fa-instagram-square"></i
+          ></a>
+        </div>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="title reveal">
+            <h2 class="section-title">About Me</h2>
+        </div>
+        <div class="content">
+            <div class="column col-left reveal">
+                <div class="img-card">
+                    <img src="/static/about.png" alt="" />
+                </div>
+            </div>
+            <div class="column col-right reveal">
+                <h2 class="content-title">Hey There! This is Abhishek</h2>
+                <p class="paragraph-text">
+                    “I graduated with my diploma in Electronics and Communication two years ago. After that i choose the field of web development and designing because i've find my interest in this and also couple of family members told me it leads to great career options,
+                    too.”
+                </p>
+                <p>I have almost every skills relavent to this web development field and i'm pursuing more skills to be more better.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="skills" id="skills">
+        <div class="title reveal">
+            <h2 class="section-title">My Skills</h2>
+        </div>
+        <div class="content">
+            <div class="column col-left reveal">
+                <h2 class="content-title">My Skills and Experiences</h2>
+                <p>
+                    I have this relavent skills and also i'm gaining more potential to become an expert in this skills. i have completed many successfull projects and gained the trust of some individuel clients.
+                </p>
+                <p>i'm a tutor at IPS Educational Foundation (N.G.O).</p>
+            </div>
+            <div class="column col-right reveal">
+                <div class="bar">
+                    <div class="info">
+                        <span>HTML CSS & JS</span>
+                        <span>70%</span>
+                    </div>
+                    <div class="line html"></div>
+                </div>
+                <div class="bar">
+                    <div class="info">
+                        <span>PYTHON FLASK</span>
+                        <span>70%</span>
+                    </div>
+                    <div class="line css"></div>
+                </div>
+                <div class="bar">
+                    <div class="info">
+                        <span>MYSQL</span>
+                        <span>50%</span>
+                    </div>
+                    <div class="line javascript"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="services" id="services">
+        <div class="title reveal">
+            <h2 class="section-title">My Services</h2>
+        </div>
+        <div class="content">
+            <div class="card reveal">
+                <div class="service-icon">
+                    <i class="fas fa-palette"></i>
+                </div>
+                <div class="info">
+                    <h3>Web Designing</h3>
+                    <p>
+                        We provide the best static, dynamic and completly responsive web application.
+                    </p>
+                </div>
+            </div>
+            <div class="card reveal">
+                <div class="service-icon">
+                    <i class="fas fa-file-code"></i>
+                </div>
+                <div class="info">
+                    <h3>Back-End Development</h3>
+                    <p>
+                        I make your web application working correctly according to the users command.
+                    </p>
+                </div>
+            </div>
+            <div class="card reveal">
+                <div class="service-icon">
+                    <i class="fas fa-object-group"></i>
+                </div>
+                <div class="info">
+                    <h3>Database</h3>
+                    <p>
+                        Here i make your date to be store succesfully with the proper security so no one can make your interrept while working.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="container">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="card mb-3">
+                        <img class="card-img-top" src="/static/web.png" height="550px" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Website</h5>
+                            <p class="card-text">Complete Dynamic and Responsive website design</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="card mb-3">
+                        <img class="card-img-top" src="/static/blog.png" height="550px" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Blog Website</h5>
+                            <p class="card-text">Complete Dynamic and Responsive website design</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="card mb-3">
+                        <img class="card-img-top" src="/static/management.png" height="550px" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Record Management Application</h5>
+                            <p class="card-text">Web application using Flask and Bootstrap</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="card mb-3">
+                        <img class="card-img-top" src="/static/web3.png" height="550px" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Web-Application</h5>
+                            <p class="card-text">Fully Responsive</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="card mb-3">
+                        <img class="card-img-top" src="/static/web2.png" height="550px" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Web-Application</h5>
+                            <p class="card-text">Fully Responsive</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="title reveal">
+            <h2 class="section-title">Contact Me</h2>
+            <p class="title reveal">Get in touch to hire me or to know me more</p>
+        </div>
+        <div class="content">
+            <div class="row">
+                <div class="card reveal">
+                    <div class="contact-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div class="info">
+                        <h3>Address</h3>
+                        <span>North West Delhi, India</span>
+                    </div>
+                </div>
+                <div class="card reveal">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <div class="info">
+                        <h3>Phone</h3>
+                        <span>+91-9205060706</span>
+                    </div>
+                </div>
+                <div class="card reveal">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="info">
+                        <h3>Email Address</h3>
+                        <span>vishalmr1409@gmail.com</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <span class="footer-title">Abhishek Vishwakarma &#169; Portfolio</span>
+    </footer>
+
+    <script src="{{url_for('static',filename='script.js')}}" charset="utf-8"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
