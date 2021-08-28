@@ -11,7 +11,7 @@ with open("config.json","r") as p:
 
 local_server = True
 app = Flask(__name__)
-app.secret_key = "a549efea6924bea0134425bc"
+app.secret_key = "###################" # Secret key here
 app.config.update(
    MAIL_SERVER = "smtp.gmail.com",
    MAIL_PORT = '465',
