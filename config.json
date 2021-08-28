@@ -4,7 +4,7 @@
         "local_uri": "mysql://root:@localhost/portfolio",
         "production_uri": "mysql://root:@localhost/portfolio",
         "resume_file": "Resume.pdf",
-        "gmail-username": "abhivishwakarma1409@gmail.com",
-        "gmail-password": "@abhi@9205060706"
+        "gmail-username": "#####################", host email here
+        "gmail-password": "################" # host password here
     }
 }
